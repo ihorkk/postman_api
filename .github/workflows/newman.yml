@@ -1,0 +1,40 @@
+name: Petstore-build
+on:
+ workflow_dispatch
+jobs:
+ test-api:
+  runs-on: ubuntu-latest
+  steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Install Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "16.x"
+
+      - name: Install newman
+        run: |
+          npm install -g newman
+          npm install -g newman-reporter-htmlextra
+          
+      - name: Make Directory for results
+        run: mkdir -p testResults
+        
+      - name: Run Postman collection
+        continue-on-error: true
+        run: 
+         npx newman run petstore.collection.json -r cli,htmlextra --reporter-htmlextra-export ./testResults/index.html
+      - name: Uploading Artifacts
+        uses: actions/upload-artifact@v1
+        if: always()
+        with:
+         name: testResults
+         path: ./testResults
+      - name: Deploy to pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v3.7.3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./testResults   
