@@ -1,0 +1,137 @@
+products:
+  - id: 1
+    name: tomato
+    price: 10
+    sku: 1232143543543
+    description: They are usually red, scarlet, or yellow, though green and purple
+      varieties do exist, and they vary in shape from almost spherical to oval
+      and elongate to pear-shaped.
+  - id: 2
+    name: lettuce
+    price: 20
+    sku: 999921312423
+    description: Most lettuce varieties are eaten fresh and are commonly served as
+      the base of green salads
+  - id: 3
+    name: apple
+    price: 30
+    sku: 999921312423312
+    description: awesome
+  - name: Ball
+    price: 878
+    sku: 993
+    description: Sleek
+    id: 4
+  - name: Sausages
+    price: 675
+    sku: 669
+    description: Practical
+    id: 5
+  - name: Bike
+    price: 231
+    sku: 853
+    description: Sleek
+    id: 6
+  - name: Salad
+    price: 472
+    sku: 996
+    description: Handmade
+    id: 7
+  - name: Car
+    price: 730
+    sku: 465
+    description: Unbranded
+    id: 8
+  - name: Hat
+    price: 53
+    sku: 635
+    description: Incredible
+    id: 9
+  - name: Salad
+    price: 3
+    sku: 105
+    description: Unbranded
+    id: 10
+  - name: Gloves
+    price: 918
+    sku: 297
+    description: Practical
+    id: 11
+  - name: Ball
+    price: 407
+    sku: 635
+    description: Rustic
+    id: 12
+  - name: Bike
+    price: 794
+    sku: 603
+    description: Handcrafted
+    id: 13
+orders:
+  - id: 1
+    name: order1
+    sku: 1232143543543
+  - id: 2
+    name: order2
+    sku: 999921312423
+  - name: order3
+    sku: 318
+    id: 3
+  - name: order4
+    sku: 100
+    id: 4
+users:
+  - id: 1
+    firstName: Alice
+    lastName: Smith
+    email: alice.smith@gmail.com
+    dateOfBirth: 1997-10-31
+    emailVerified: true
+    signUpDate: 2019-08-24
+    status: active
+    level: admin
+  - id: 2
+    firstName: Bob
+    lastName: Smith
+    email: bob.smith@gmail.com
+    dateOfBirth: 1997-10-31
+    emailVerified: true
+    signUpDate: 2019-08-24
+    status: active
+    level: consumer
+  - id: 3
+    firstName: Joe
+    lastName: Smith
+    email: joe.smith@gmail.com
+    dateOfBirth: 1997-10-31
+    emailVerified: true
+    signUpDate: 2019-08-24
+    status: active
+    level: consumer
+  - id: 4
+    firstName: Vesta
+    lastName: Smith
+    email: vesta.smith@gmail.com
+    dateOfBirth: 1997-10-31
+    emailVerified: true
+    signUpDate: 2019-08-24
+    status: active
+    level: consumer
+  - id: 5
+    firstName: Dax
+    lastName: Smith
+    email: dax.smith@gmail.com
+    dateOfBirth: 1997-10-31
+    emailVerified: true
+    signUpDate: 2019-08-24
+    status: active
+    level: consumer
+  - id: 6
+    firstName: naruto
+    lastName: Smith
+    email: naruto.smith@gmail.com
+    dateOfBirth: 1997-10-31
+    emailVerified: true
+    signUpDate: 2019-08-24
+    status: active
+    level: consumer
